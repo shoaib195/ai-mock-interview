@@ -6,17 +6,6 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
-  import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-  } from "@/components/ui/alert-dialog"
 
   import Certificate from '@/app/components/Certificate/Certificate';
 
@@ -80,32 +69,7 @@ const ResultData = ({ correctAnsers, userAnsers, formData }) => {
     <div>
       {loading ? 'Loading.....' : (
         <>
-        {/* <AlertDialog>
-      <AlertDialogTrigger asChild>
-        <button variant="outline">Show Dialog</button>
-      </AlertDialogTrigger>
-      <AlertDialogContent
-    style={{
-      width: '100%',        // Full width
-      maxWidth: '1252px',     // Ensure it spans the entire viewport width
-      height: '800px',       // Set height to 700px
-      maxHeight: '700px',    // Limit max height
-      overflowY: 'auto',     // Allow scrolling if content overflows
-    }}
-  >
-        <AlertDialogHeader>
-          <AlertDialogTitle>Certificate</AlertDialogTitle>
-          <AlertDialogDescription>
-          
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction>Continue</AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog> */}
-
+      
         <div className='result_data'>
             <div className="img">
                 {score?.score <= 40 ? (
