@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import UserFrom from '@/app/components/UserFrom/UserFrom';
 import UserQuestions from '@/app/components/UserQuestions/UserQuestions';
 import ResultData from '@/app/components/ResultData/ResultData';
-import Certificate from "@/app/components/Certificate/Certificate";
 import './styles.css'
 
 const Page = () => {
@@ -31,11 +30,7 @@ const Page = () => {
     }
   };
 
-  const handleBack = () => {
-    if (tabIndex > 0) {
-      setTabIndex(tabIndex - 1);
-    }
-  };
+
 
   const variants = {
     initial: (direction: number) => ({
