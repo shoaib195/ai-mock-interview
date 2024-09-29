@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Cabin } from 'next/font/google';
+
+const cabin = Cabin({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'], // Select the weights you need
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cabin.className} antialiased`}
       >
         {children}
       </body>
